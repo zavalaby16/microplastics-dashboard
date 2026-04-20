@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Microplastics in Primates</title>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="landing">
+<div class="landing">
+ <div class="landing-content">
+
+<h1 data-es="Microplásticos en Primates"
+    data-en="Microplastics in Primates">
+  Microplásticos en Primates
+</h1>
+
+<p class="subtitle"
+   data-es="Visualización interactiva sobre la presencia de microplásticos en distintas especies de primates Neotropicales"
+   data-en="Interactive visualization of microplastics in Neotropical primate species">
+  Visualización interactiva sobre la presencia de microplásticos en distintas especies de primates Neotropicales
+</p>
+
+<p class="director"
+   data-es="<strong>Dirección del proyecto:</strong><br>Msc. Fabiola Loreto Zavala Alarcón"
+   data-en="<strong>Project lead:</strong><br>MSc. Fabiola Loreto Zavala Alarcón">
+  <strong>Dirección del proyecto:</strong><br>
+  Msc. Fabiola Loreto Zavala Alarcón
+</p>
+
+<p class="participants"
+   data-es="<strong>Instituciones participantes:</strong><br>Akumal Monkey Sanctuary – Universidad de Guanajuato"
+   data-en="<strong>Participating institutions:</strong><br>Akumal Monkey Sanctuary – University of Guanajuato">
+  <strong>Instituciones participantes:</strong><br>
+  Akumal Monkey Sanctuary – Universidad de Guanajuato
+</p>
+
+<div class="participants">
+
+  <p
+    data-es="<b>Participantes:</b>"
+    data-en="<b>Contributors:</b>">
+    <b>Participantes:</b>
+  </p>
+
+  <div class="participant-list">
+    <p>Msc. Fabiola L. Zavala Alarcón</p>
+    <p>Dr. Juan Pablo Huchin</p>
+    <p>Biol. Óscar Monzón</p>
+    <p>Biol. Ian Uriel</p>
+  </div>
+
+</div> 
+  <button id="enterBtn">Entrar</button>
+
+<div class="landing-footer">
+  <span id="copyright"></span>
+  <button id="langBtn">English</button>
+</div>
+      </div>
+   </div>
+</div>
+
+<div class="dashboard" style="display:none;">  
+  <div class="dashboard-header">
+  <button id="backBtn">← Back</button>
+  <button id="langToggle">English</button>
+  </div>
+
+<h1 
+  data-es="Microplásticos en Primates" 
+  data-en="Microplastics in Primates">
+  Microplásticos en Primates
+</h1>
+
+<section>
+
+  <div class="intro-box">
+      <h2 
+      data-es="¿Qué son los microplásticos?"
+      data-en="What are microplastics?">
+     ¿Qué son los microplásticos?
+      </h2>    
+<p 
+  data-es="Los microplásticos son partículas plásticas menores a 5 mm que pueden encontrarse en distintos ambientes y organismos."
+  data-en="Microplastics are plastic particles smaller than 5 mm that can be found in different environments and organisms.">
+  Los microplásticos son partículas plásticas menores a 5 mm que pueden encontrarse en distintos ambientes y organismos.
+</p>
+
+  </div>
+
+  <div class="types-section">
+     <h2 
+       data-es="Tipos de microplásticos encontrados en este estudio"
+       data-en="Types of microplastics found in this study">
+       Tipos de microplásticos encontrados en este estudio
+     </h2>
+
+    <div class="types-grid">
+      
+     <div>
+  <h3 
+    data-es="Fibra" 
+    data-en="Fiber">
+    Fibra
+  </h3>
+
+  <p 
+    data-es="Partículas alargadas que suelen originarse de textiles sintéticos."
+    data-en="Elongated particles that usually originate from synthetic textiles.">
+    Partículas alargadas que suelen originarse de textiles sintéticos.
+  </p>
+</div>
+
+<div>
+  <h3 
+    data-es="Fragmento" 
+    data-en="Fragment">
+    Fragmento
+  </h3>
+
+  <p 
+    data-es="Partículas irregulares que provienen de la fragmentación de plásticos más grandes."
+    data-en="Irregular particles that come from the breakdown of larger plastics.">
+    Partículas irregulares que provienen de la fragmentación de plásticos más grandes.
+  </p>
+</div>
+
+    </div>
+  </div>
+
+  <div class="mp-types">
+
+    <div class="mp-card">
+      <div class="img-container">
+        <img src="images/fibra.png">
+        <div class="scale-bar">100 µm</div>
+      </div>
+      <p 
+  data-es="<b>Fibra:</b> Filamentos delgados provenientes de textiles y redes."
+  data-en="<b>Fiber:</b> Thin filaments originating from textiles and fishing nets.">
+  <b>Fibra:</b> Filamentos delgados provenientes de textiles y redes.
+</p>
+    </div>
+
+    <div class="mp-card">
+      <div class="img-container">
+      <img src="images/fragmento.png" alt="Fragment microplastic"> 
+      <div class="scale-bar">100 µm</div>
+      </div>
+     <p 
+    data-es="<b>Fragmento:</b> Partículas irregulares de plásticos degradados."
+    data-en="<b>Fragment:</b> Irregular particles from degraded plastics.">
+     <b>Fragmento:</b> Partículas irregulares de plásticos degradados.
+  </p>    
+    </div>
+
+  </div>
+</section>
+
+<h2 
+  data-es="Resultados del estudio"
+  data-en="Results">
+  Resultados del estudio
+</h2>
+
+<h3 style="font-size: 15px; margin-bottom: 10px;"
+  data-es="Comparación de tipos de microplásticos entre condiciones de vida distintas (vida silvestre vs. cuidado profesional)"
+  data-en="Comparison of microplastic types under different living conditions (wild vs. professional care)">
+  Comparación de tipos de microplásticos entre dos condiciones de vida (vida silvestre vs. cuidado profesional)
+</h3>
+
+<!-- ✅ Gráfica 1 -->
+<div class="card" style="max-width: 600px; margin: 0 auto 30px auto;">
+  <div id="plot1"></div>
+</div>
+
+<!-- ✅ Gráfica 2 -->
+
+<h3 style="font-size: 15px; margin-bottom: 10px;"
+  data-es="Comparación de especies según la cantidad de microplásticos encontrados"
+  data-en="Comparison of species based on the amount of microplastics found">
+  Comparación de especies según la cantidad de microplásticos encontrados
+</h3>
+
+<div class="card" style="max-width: 700px; margin: 0 auto 15px auto;">
+  <div id="typePlot"></div>
+</div>
+
+</section>
+
+<section>
+
+  <h2
+    data-es="Especies analizadas"
+    data-en="Species analyzed">
+    Especies analizadas
+  </h2>
+
+  <div class="controls-row">
+
+    <div>
+      <label for="speciesSelect"
+        data-es="Seleccionar especie:"
+        data-en="Select species:">
+        Seleccionar especie:
+      </label>
+
+      <select id="speciesSelect"></select>
+    </div>
+
+    <div>
+      <p id="speciesDescription"></p>
+    </div>
+
+    <div>
+      <button id="viewIndividuals">Ver por individuo</button>
+      <button id="viewType">Ver por tipo de microplástico</button>
+      <button id="viewCondition">Condición</button>
+    </div>
+
+  </div>
+
+  <!-- 🔥 LAYOUT PRINCIPAL -->
+  <div class="species-layout">
+    <!-- IZQUIERDA -->
+    <div class="species-info">
+      <div id="speciesInfo"></div>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="species-graph">
+    <div id="insightBox" style="margin-top: 15px;"></div>
+      <div class="card graph-card" style="max-width: 700px; width: 100%; margin: 0 auto;">
+        <div id="plot"></div>
+        <p id="sampleInfo" style="margin-top: 10px;"></p>
+      </div>
+    </div>
+
+  </div>
+
+<div class="landing-footer">
+  <span id="copyrightDashboard"></span>
+</div>
+	
+</section>
+
+<script src="./script.js"></script>
+</div>
+</body>
+
+</html>
