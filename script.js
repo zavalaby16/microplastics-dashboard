@@ -286,7 +286,7 @@ const labels = {
     cantidad: "Cantidad"
   },
   en: {
-    titulo1: "<b>Types of microplastics by living condition</b>",
+    titulo1: "<b>Microplastics types by living condition</b>",
     titulo2: "<b>Analyzed species</b>",
     titulo3: "<b>Microplastics per individual</b>",
     titulo4: "<b>Type of microplastics</b>",
