@@ -620,3 +620,15 @@ margin-right: auto;
   color: #E2E8F0;
   opacity: 0.9;
 }
+
+.availability-note {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin: 100px auto 5px auto;  /* ← separa de gráfica */
+  opacity: 0.8;
+  max-width: 700px;
+}
+.availability-note {
+  letter-spacing: 0.3px;
+}

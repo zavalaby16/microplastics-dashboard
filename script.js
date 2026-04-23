@@ -992,8 +992,8 @@ function changeLanguage() {
   if (langToggle) langToggle.textContent = label;
 
   const text = currentLang === "es"
-    ? "© " + new Date().getFullYear() + " Fabiola Zavala | Visualización científica interactiva"
-    : "© " + new Date().getFullYear() + " Fabiola Zavala | Interactive scientific visualization";
+  ? "© " + new Date().getFullYear() + " Fabiola Zavala | Visualización científica interactiva | Desarrollado con R y JavaScript"
+  : "© " + new Date().getFullYear() + " Fabiola Zavala | Interactive scientific visualization | Developed using R and JavaScript";
 
   const el1 = document.getElementById("copyright");
   if (el1) el1.innerHTML = text;
