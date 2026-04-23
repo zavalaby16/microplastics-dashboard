@@ -43,7 +43,6 @@ gap:40px;
 align-items:flex-start;
 margin-top:20px;
 }
-
 #speciesInfo{
 width:220px;
 text-align:center;
@@ -244,7 +243,7 @@ section {
   display: none;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 80px 20px 40px 20px;
   position: relative;
 }
 .landing {
@@ -271,14 +270,15 @@ section {
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 40px rgba(0,0,0,0.5);
- max-width: 700px;
+  max-width: 700px;
+  tex-align: center;
 }
 
 .landing h1 {
   font-size: 38px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   line-height: 1.2;
 }
 .subtitle {
@@ -289,8 +289,12 @@ section {
   font-weight:500;  
   color: #E2E8F0;
   opacity: 0.9;
-   margin-bottom: 25px;
+  margin-bottom: 25px;
   line-height:1.6;
+  text-align: center;  
+  width: 100%;
+margin-left: auto;
+margin-right: auto;
 }
 .landing {
   font-family: 'Inter', sans-serif;
@@ -355,19 +359,19 @@ section {
   background-color: #2D6A4F;
   color: #F9FAFB;
   box-shadow: 0 4px 12px rgba(0,0,0,0,25); 
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 12px 26px;
   font-size: 15px;
   border: none;
   border-radius: 14px !important;
 }
 .landing h1 {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
   font-weight: 600;
-  font-size:36px;
+  font-size:30px;
   color:#F9FAFB;
   letter-spacing: 0.5px;
-opacity: 0.8;
+  opacity: 0.95;
 }
 .participant-list {
   max-width: 320px;
@@ -607,4 +611,12 @@ opacity: 0.8;
 #langToggle:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
-
+.dashboard-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #E2E8F0;
+  opacity: 0.9;
+}
